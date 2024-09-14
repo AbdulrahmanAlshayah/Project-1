@@ -1,0 +1,123 @@
+.footer{
+  background-color: #e2e2e2;
+  overflow: hidden;
+  padding-top: 30px;
+  margin-top: 50px;
+  .galary, .info, .contact {
+    float: $float-left;
+
+  }
+  .galary {
+    @include breakpoints(small){
+      width: 100%;
+    }
+    @include breakpoints(medium){
+      width: 50%;
+    }
+    @include breakpoints(large){
+      width: 50%;
+    }
+    .img-box {
+      margin-bottom: 20px;
+      overflow: hidden;
+      img {
+        float: $float-left;
+        width: 150px;
+        height: 150px;
+        @include breakpoints(mobile){
+          float: none;
+        }
+      }
+      .text {
+        float: $float-left;
+        width: calc(100% - 180px);
+        margin-right: 15px;
+        margin-left: 15px;
+        @include breakpoints(mobile){
+          float: none;
+          width: 100%;
+        }
+        h4 {
+          color: $redColor;
+          margin: 20px 0 0 -30px;
+        }
+        p {
+          color: #888;
+          line-height: 1.9;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+    
+  .info {
+    @include breakpoints(small){
+      width: 50%;
+    }
+    @include breakpoints(medium){
+      width: 25%;
+    }
+    @include breakpoints(large){
+      width: 25%;
+    }
+    ul {
+      color: #888;
+      line-height: 1.8;
+      li {
+        span {
+          color: $redColor;
+        }
+      }
+    }
+    h4 {
+      color: #888;
+      font-weight: bold;
+      margin-bottom: 0px;
+    }
+    p {
+      color: #888;
+      margin-top: 8px;
+    }
+  }
+    
+  .contact {
+    @include breakpoints(small){
+      width: 50%;
+    }
+    @include breakpoints(medium){
+      width: 25%;
+    }
+    @include breakpoints(large){
+      width: 25%;
+    }
+    input[type="text"] ,
+    input[type="email"] ,
+    textarea {
+      border: 1px solid #c9c9c9;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      width: 100%;
+    }
+    textarea {
+      height: 140px;
+    }
+  }
+  .section-title {
+    color: #444;
+    font-weight: normal;
+  }
+  .copyright {
+    padding: 25px 0;
+    border-top: 1px solid #c5c5c5;
+    overflow: hidden;
+    color: #888;
+    .text, .author {
+      float: $float-left;
+      width: 50%;
+    }
+    .author {
+      text-align: $text-right;
+    }
+  }
+}

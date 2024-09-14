@@ -1,0 +1,149 @@
+// Start Slider
+.slider { 
+    blockquote {
+      font: {
+        size: 20px;
+        style:italic;
+        weight: bold;
+        font-family: Tahoma, Arial;
+      }
+      line-height: 1.7;
+      text-align: center;
+      color: #5e5e5e;
+      width: 80%;
+      margin: 30px auto;
+    }
+    img {
+      max-width: 100%;
+    }
+    ul.bullets{ 
+      text-align: center;
+      li{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $grayColor;
+        border: 3px solid $grayColor;
+        cursor: pointer;
+        &.active,
+        &:hover {
+          background-color: #FFF;
+          border: 3px solid #333;
+        }
+      }
+    }
+}
+// End Slider
+
+// Start Services
+.services {
+  .services-box {
+    @include breakpoints(medium){
+      float: $float-left;
+      width: calc(100% / 3);
+      &:not(:last-of-type){
+        padding-right: 20px;
+      }
+    }
+    @include breakpoints(large){
+      float: $float-left;
+      width: calc(100% / 3);
+      &:not(:last-of-type){
+        padding-right: 20px;
+      }
+    }
+    @include breakpoints(mobile){
+      i {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+    .service-title{
+      color: #666;
+      i{
+        font-size: 35px;
+        position: relative;
+        top: 4px;
+      }
+      span {
+      padding-left: 10px;
+      padding-right: 10px;
+      }
+    } 
+    .service-desc{
+      color: #777;
+    }
+    .link {
+      color: $redColor;
+      text-decoration: none;
+    }
+  }
+}
+// End Services
+
+/* Our Player */
+.our-players {
+  .player-box {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: $float-left;
+
+    @include breakpoints(small){
+      width: calc(100% / 2);
+      text-align: center;
+    }
+    @include breakpoints(medium){
+      width: calc(100% / 3);
+    }
+    @include breakpoints(large){
+      width: calc(100% / 5);
+    }
+
+    
+    .player-img {
+      max-width: 100%;
+    }
+    .player-title{
+      color: #666;
+      font-weight: normal;
+      span {
+        font-weight: bold;
+      }
+    } 
+    .player-desc{
+      color: #777;
+    }
+    .link {
+      color: $redColor;
+      text-decoration: none;
+    }
+  }
+}
+/* End Player */
+
+/* Start Lorem Ipsum */
+.lorem-ipsum {
+  .lorem-box {
+    float: $float-left;
+    width: calc((100% - 6%) / 3);
+    &:not(:last-of-type){
+      margin-right: 3%;
+    }
+    @include breakpoints(mobile){
+      float: none;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+}
+
+/* End Lorem Ipsum */
+
+
+

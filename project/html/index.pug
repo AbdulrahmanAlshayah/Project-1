@@ -1,0 +1,23 @@
+//- - var pageTitle ='Homepage';
+
+- var dir = "ltr";
+doctype html
+html(lang="en" dir=dir)
+  head
+    include pug/layout/meta
+    block styles 
+      include pug/layout/styles
+  body
+    //- Start Header
+    include pug/layout/header
+    //- End Header
+    //- Start Homepage
+    include pug/pages/homepage
+    //- End Homepage
+    //- Start footer
+    include pug/layout/footer
+    //- End footer
+
+    include Pug/layout/scripts
+
+    script(src="http://localhost:35729/livereload.js")

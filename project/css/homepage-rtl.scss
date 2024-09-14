@@ -1,0 +1,87 @@
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixins';
+
+$float-left: right;
+$float-right: left;
+
+$text-left: right;
+$text-right: left;
+
+.header {
+    .logo{
+      float: $float-left;
+      .the-toggler {
+        right: auto;
+        left: 15px;
+      }
+    }
+    .navbar {
+      float: $float-left;
+      li {
+        float: $float-left;
+      }
+    }
+  }
+
+// Start Services
+.services {
+  .services-box {
+    @include breakpoints(medium){
+      float: $float-left;
+    }
+    @include breakpoints(large){
+      float: $float-left;
+    }
+  }
+}
+// End Services
+
+/* Our Player */
+.our-players {
+  .player-box {
+    float: $float-left;
+
+  }
+}
+/* End Player */
+
+/* Start Lorem Ipsum */
+.lorem-ipsum {
+    .lorem-box {
+      float: $float-left;
+      &:not(:last-of-type){
+        margin-right: auto;
+        margin-left: 3%;
+      }
+    }
+  
+  }
+
+/* End Lorem Ipsum */
+
+
+.footer{
+    .galary, .info, .contact {
+      float: $float-left !important;
+  
+    }
+      .img-box {
+        img {
+            float: $float-left !important;
+        }
+        .text {
+            float: $float-left !important;
+        }
+      }
+    
+
+    .copyright {
+        .text, .author {
+            float: $float-left;
+        }
+        .author {
+            text-align: $text-right;
+        }
+        }
+
+}

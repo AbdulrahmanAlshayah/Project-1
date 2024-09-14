@@ -1,0 +1,29 @@
+//- extends  index
+
+
+//- block append styles
+//-   link(rel="stylesheet", href="css/homepage-rtl.css")
+
+//- - var dir = "rtl";
+
+- var dir = "rtl";
+doctype html
+html(lang="en" dir=dir)
+  head
+    include pug/layout/meta
+    include pug/layout/styles
+    link(rel="stylesheet", href="css/homepage-rtl.css")
+  body
+    //- Start Header
+    include pug/layout/header
+    //- End Header
+    //- Start Homepage
+    include pug/pages/homepage
+    //- End Homepage
+    //- Start footer
+    include pug/layout/footer
+    //- End footer
+
+    include Pug/layout/scripts
+
+    script(src="http://localhost:35729/livereload.js")

@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    @include breakpoints(small) {
+        width: 750px;
+    }
+    @include breakpoints(medium) {
+        width: 970px;
+    }
+    @include breakpoints(large) {
+        width: 1170px;
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+.text-center-xs {
+    @include breakpoints(mobile){
+        text-align: center;
+      }
+}

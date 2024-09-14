@@ -1,0 +1,69 @@
+/*
+    ** Media Query Mixin For Help Only
+*/
+/*
+    ** Media Query Mixin For Help Only
+*/
+/*
+    ** Prefixes Mixin
+*/
+/*
+    **Animation mixin
+*/
+.header .logo {
+  float: right;
+}
+.header .logo .the-toggler {
+  right: auto;
+  left: 15px;
+}
+.header .navbar {
+  float: right;
+}
+.header .navbar li {
+  float: right;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .services .services-box {
+    float: right;
+  }
+}
+@media (min-width: 1200px) {
+  .services .services-box {
+    float: right;
+  }
+}
+
+/* Our Player */
+.our-players .player-box {
+  float: right;
+}
+
+/* End Player */
+/* Start Lorem Ipsum */
+.lorem-ipsum .lorem-box {
+  float: right;
+}
+.lorem-ipsum .lorem-box:not(:last-of-type) {
+  margin-right: auto;
+  margin-left: 3%;
+}
+
+/* End Lorem Ipsum */
+.footer .galary, .footer .info, .footer .contact {
+  float: right !important;
+}
+.footer .img-box img {
+  float: right !important;
+}
+.footer .img-box .text {
+  float: right !important;
+}
+.footer .copyright .text, .footer .copyright .author {
+  float: right;
+}
+.footer .copyright .author {
+  text-align: left;
+}
+/*# sourceMappingURL=homepage-rtl.css.map */
